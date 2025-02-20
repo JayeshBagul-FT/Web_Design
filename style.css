@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  font-family: "MycustomFont";
 }
 
 html,
@@ -15,6 +16,7 @@ body {
 
 main {
   width: 100%;
+  padding: 1.5rem;
   border: 1px solid black;
 }
 
@@ -22,20 +24,21 @@ main {
   display: flex;
   flex-direction: column;
   align-items: start;
-  padding: 1.5rem;
 }
 .view-1 h1 {
+  color: #484848;
   font-size: 1rem;
-  font-family: poppins;
-  font-weight: 400;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 300;
   text-transform: uppercase;
+  padding-left: 0.4rem;
 }
 .view-1 h2 {
   width: 70%;
   font-size: 4rem;
   font-weight: 500;
-  font-family: "Satoshi", "Sans-Serif";
-  letter-spacing: -0.04em;
+  font-family: "Syne", serif;
+  letter-spacing: -0.01em;
 }
 .view-1 .pic {
   height: 220px;
@@ -50,13 +53,58 @@ main {
   border-radius: 25px;
 }
 
+.view-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0rem;
+}
+.view-2 .top {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem 0rem;
+  gap: 2rem;
+  width: 100%;
+  height: 100%;
+}
+.view-2 .top .text p {
+  color: #484848;
+  font-size: 1rem;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding-left: 0.4rem;
+}
+.view-2 .top .text h1 {
+  font-size: 3rem;
+  font-weight: 500;
+  font-family: "Syne", serif;
+  letter-spacing: -0.01em;
+}
+.view-2 .top button {
+  background-color: #000;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #fdfbf5;
+  padding: 0.7rem 1.4rem;
+  border-radius: 10px;
+  letter-spacing: 0.1rem;
+  font-family: "Syne", serif;
+}
+.view-2 #line {
+  height: 1px;
+  width: 100%;
+  background-color: #000;
+}
+
 @media (min-width: 1020px) {
   main {
-    padding: 2rem;
+    padding: 1.8rem;
   }
   .view-1 h2 {
-    width: 70%;
-    font-size: 6.5rem;
+    width: 100%;
+    font-size: 6.2rem;
   }
   .view-1 .pic {
     height: 100%;
