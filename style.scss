@@ -251,6 +251,91 @@ main {
     }
 }
 
+.view-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem 0rem;
+
+    svg {
+        width: 4rem;
+    }
+
+
+    #line {
+        display: none;
+        height: 1px;
+        background-color: #000;
+        align-self: stretch;
+        margin: 1rem;
+    }
+
+    .title {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .sub-title {
+
+            h2 {
+                color: #484848;
+                font-size: 1rem;
+                font-family: "Roboto Mono", monospace;
+                font-weight: 300;
+                text-transform: uppercase;
+                padding-left: 0.4rem;
+                padding-top: 3rem;
+                padding-bottom: 0.5rem;
+            }
+
+            h1 {
+                font-size: 3.1rem;
+                font-weight: 500;
+                font-family: 'Syne', serif;
+                letter-spacing: -0.01em;
+                text-transform: uppercase;
+            }
+
+        }
+
+        svg {
+            display: block;
+            width: 2rem;
+        }
+
+        .innovationsvg {
+            display: none;
+        }
+    }
+
+    .para {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 10px;
+
+        p {
+            font-family: "Satoshi", "Satoshi Placeholder", sans-serif;
+            font-size: 1.3rem;
+            padding: 2rem 0rem;
+            font-weight: 200;
+
+        }
+
+        button {
+            background-color: #000;
+            width: fit-content;
+            color: #fdfbf5;
+            padding: 0.7rem 1.4rem;
+            border-radius: 10px;
+            letter-spacing: 0.1rem;
+            font-family: 'Syne', serif;
+
+        }
+    }
+}
+
 
 
 
@@ -434,6 +519,92 @@ main {
                     object-position: 50% 50%;
                     object-fit: contain;
                 }
+
+            }
+        }
+    }
+
+    .view-4 {
+        flex-direction: row;
+        height: 100%;
+
+        .innovationsvg {
+            display: block;
+        }
+
+        #line {
+            display: block;
+            height: initial;
+            width: 1px;
+            background-color: #000;
+            align-self: stretch;
+            margin: 1rem;
+        }
+
+        .title {
+            height: 100%;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 3rem;
+
+            .sub-title {
+                h2 {
+                    color: #484848;
+                    font-size: 1rem;
+                    font-family: "Roboto Mono", monospace;
+                    font-weight: 300;
+                    text-transform: uppercase;
+                    padding-left: 0.4rem;
+                    padding-top: 3rem;
+                    padding-bottom: 0.5rem;
+                }
+
+                h1 {
+                    font-size: 5rem;
+                    width: 90%;
+                    font-weight: 500;
+                    font-family: 'Syne', serif;
+                    letter-spacing: -0.01em;
+                    text-transform: uppercase;
+                }
+            }
+
+            svg {
+                display: none;
+            }
+
+            .innovationsvg {
+                display: block;
+                width: 4rem;
+            }
+        }
+
+        .para {
+            width: 80%;
+            padding-left: 2.5rem;
+            height: 450px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: start;
+            gap: 5rem;
+
+            p {
+                font-family: "Satoshi", "Satoshi Placeholder", sans-serif;
+                font-size: 1.7rem;
+                padding: 2rem 0rem;
+                font-weight: 400;
+                width: 90%;
+            }
+
+            button {
+                background-color: #000;
+                width: fit-content;
+                color: #fdfbf5;
+                padding: 0.7rem 1.4rem;
+                border-radius: 10px;
+                letter-spacing: 0.1rem;
+                font-family: 'Syne', serif;
 
             }
         }
